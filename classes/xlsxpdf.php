@@ -1,0 +1,24 @@
+<?php
+    class xlsxhtml {
+        public function __construct($format_res, $flname) {
+            /** PHPExcel_IOFactory */
+            include 'classes/PHPExcel/IOFactory.php';
+
+            $this->inputFileType = 'Excel2007';
+            $this->inputFileName = 'Original/'.$format_res;
+
+            $this->objReader = PHPExcel_IOFactory::createReader($this->inputFileType);
+            $this->objPHPExcelReader = $this->objReader->load($this->inputFileName);
+
+            $this->loadedSheetNames = $this->objPHPExcelReader->getSheetNames();
+
+            $this->objWriter = PHPExcel_IOFactory::createWriter($this->objPHPExcelReader, 'HTML');
+
+            foreach($this->loadedSheetNames as $this->sheetIndex => $this->loadedSheetName) {
+                $this->objWriter->setSheetIndex($this->sheetIndex);
+                $this->objWriter->save('Recode/'.$flname.'.html');
+
+            }
+        }
+    }
+?>
