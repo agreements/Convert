@@ -1,0 +1,266 @@
+/*
+		@name: Convert
+		@author: Polyakov_I
+		@discribe: converter
+		@version: 1.0
+*/
+html, body {
+	font-size: 12px;
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+	text-align: left;
+	background: url('../img/bg.png');
+}
+
+div {
+	display: block;
+}
+
+.hole_wrap {
+	position: relative;
+}
+
+#content_wrap {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.f_l {
+	float: left;
+}
+
+.f_r {
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+/* CONTENT */
+#content { 
+	width: auto;
+	background-color: #f0f0f0;
+	padding: 20px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+}
+
+#content #header {
+	margin: 20px;
+	padding: 10px 30px;
+	background-color: #f7f7f7;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* HEADER */
+#content #header #block #head_text {
+	font-size: 16px;
+}
+
+#content #header #block #text p{
+	margin: 0px;
+	font-size: 14px;
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif
+}
+
+#content #header h1 {
+	margin: 10px 0;
+}
+
+#logo {
+	width: 100px;
+	height: 80px;
+	background: url('../img/logo.png') no-repeat;
+}
+
+#content .form #loading_block {
+	padding: 20px;
+	margin: 5px 110px;
+	width: auto;
+	background-color: #f7f7f7;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+.form button.file_type {
+	margin: 10px 37px;
+	width: 75px;
+	height: 89px;
+	border-style: none;
+	background-color: #f7f7f7;
+	background-repeat: none;
+}
+/* VALIDATION IMAGE */
+#validation {
+	margin: 14px 150px 0 0;
+	height: 32px;
+	width: 32px;
+	background: url('../img/false.png') no-repeat;
+}
+
+.form button.deactivated {
+	-moz-opacity: 0.30;
+	opacity: 0.30;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=30);
+}
+/* LOADING BUTTON */
+.form .upload_b {
+	margin: 10px 0 10px 165px;
+	text-align: center;
+	overflow: hidden;
+	width: 140px;
+	height: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	background: url('../img/browse.png') no-repeat;
+}
+
+
+.form input.files_load {
+	height: 38px;
+	width: 140px;
+	-moz-opacity: 0; 
+	filter: alpha(opacity=0);
+	opacity: 0; 
+	margin-bottom: 8px;
+	font-size: 150px; 
+	-moz-opacity: 0; 
+	opacity: 0;	
+}
+
+.form .formats {
+	margin-left: 20px;
+	width: 470px;
+}
+
+.form .gr_line {
+	margin: 0 5px;
+	height: 3px;
+	width: auto;
+	background: url('../img/line.png') repeat-x;
+}
+/*FILES*/
+.form button.doc{
+	background-image: url('../img/doc.png') !important;
+	outline: none; 
+}
+
+.form button.docx{
+	background-image: url('../img/docx.png') !important; 
+	outline: none; 
+}
+
+.form button.rtf{
+	background-image: url('../img/rtf.png') !important; 
+	outline: none; 
+}
+
+.form button.xls{
+	background-image: url('../img/xls.png') !important; 
+	outline: none; 
+}
+
+.form button.xlsx{
+	background-image: url('../img/xlsx.png') !important; 
+	outline: none; 
+}
+
+.form button.csv{
+	background-image: url('../img/csv.png') !important; 
+	outline: none; 
+}
+
+.form button.pdf{
+	background-image: url('../img/pdf.png') !important;
+	outline: none;  
+}
+
+.form button.txt{
+	background-image: url('../img/txt.png') !important; 
+	outline: none; 
+}
+
+.form button.html{
+	background-image: url('../img/html.png') !important; 
+	outline: none; 
+}
+
+.form button.php{
+	background-image: url('../img/php.png') !important; 
+	outline: none; 
+}
+
+.form button.gif{
+	background-image: url('../img/gif.png') !important; 
+	outline: none; 
+}
+
+.form button.jpg{
+	background-image: url('../img/jpg.png') !important; 
+	outline: none; 
+}
+
+.form button.png{
+	background-image: url('../img/png.png') !important; 
+	outline: none; 
+}
+
+.form input.input_type {
+	display: none;
+}
+
+.form button.type_selected {
+	width: 75px;
+	height: 89px;
+	border-style: none;
+	background-image: url('../img/file.png'); 
+	background-repeat: none;
+	background-color: #d4d4d4;
+}
+
+#loadericon {
+	display: none;
+	margin: 14px 0 0 15px;	
+}
+/* DOWNLOAD BUTTON */
+form .submit {
+	border: none;
+	margin: 10px 150px;
+	height: 40px;
+	width: 200px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: url('../img/submit.png') no-repeat;
+}
+
+.form {
+	width: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+/* ALERT MESSAGE */
+#message {
+	margin-left: 47px;
+	width: 400px;
+	height: 18px;
+}

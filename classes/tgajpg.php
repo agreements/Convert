@@ -37,7 +37,9 @@
             
             $i = 0;
             $num_bytes = $header['pixel_size']/8;
-            $pixels = str_split($data, $num_bytes);
+            $pixels = str_split($data, 4);
+            var_dump($pixels);
+           
             //read pixels 
             if ($mirrow == true) {   
                 for ($y=0; $y<$header['height']; $y++) {       
